@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load humanize staticfiles %}
+{% block header %}
+    Inicio /
+    <h1>
+        Pedido
+    </h1>
+{% endblock %}
+{% block main %}
+    <div class="purple-arrow" deluminate_imagetype="png">
+        &nbsp;
+    </div>
+    <div class="chart-cake">
+        <div class="container">
+            <button class="btn btn-success pull-right" id="enviar_pedido">
+                Enviar pedido
+            </button>
+            <br><br><br>
+            <table class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                    <th>
+                        Id
+                    </th>
+                    <th>
+                        Producto
+                    </th>
+                    <th>
+                        Descripción
+                    </th>
+                    <th>
+                        *
+                    </th>
+                    <th>
+                        Precio
+                    </th>
+                    <th>
+                        Cantidad
+                    </th>
+
+                    <th>
+                        total
+                    </th>
+                </tr>
+                </thead>
+                <tbody id="DocumentResults">
+                {% verbatim %}
+                <script id="document-template" type="text/x-handlebars-template">
+                    {{#each this}}
+                    <tr id="product_id">
+                        <td>
+                            {{ id }}
+                        </td>
+                        <td>
+                            <img alt="Cake-one" class="img-100px" src="{{ url }}">
+                        </td>
+                        <td class="chart-description">
+                            <h4 class="mar-btm-0">
+                                {{ producto_nombre }}
+                            </h4>
+
+                            <p class="mar-top-10 pad-top-10 top-dashed">
+                                {{ descripcion }}
+                            </p>
+                        </td>
+                        <td class="chart-center">
+                            <button class="btn btn-danger btn-xs delete" role="button"
+                                    data-id-pedido="{{ pedido }}" data-id-producto="{{ producto }}">
+                                Eliminar <i class="fa fa-trash"></i>
+                            </button>
+                        </td>
+                        <td class="chart-center">
+                            $ {{ precio }}
+                        </td>
+                        <td class="chart-center">
+                            {{ cantidad }}
+                        </td>
+                        <td class="chart-center">
+                            $ {{ total }}
+                        </td>
+                    </tr>
+                    {{/each}}
+                    <tr>
+                        <td colspan="6">
+                            <h3 class="text-right">
+                                Total
+                            </h3>
+                        </td>
+                        <td>
+                            <h3 class="text-center" id="total_pedido">
+
+                            </h3>
+                        </td>
+                    </tr>
+                </script>
+                {% endverbatim %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}
+

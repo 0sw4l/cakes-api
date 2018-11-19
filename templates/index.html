@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load humanize staticfiles %}
+{% block header %}
+    Inicio /
+    <h1>
+        Productos
+    </h1>
+{% endblock %}
+{% block main %}
+    <div class="purple-arrow" deluminate_imagetype="png">
+        &nbsp;
+    </div>
+    <section class="abouts-cake" id="customer_data">
+        <div class="tittle-cake text-center mar-top-20">
+            <div class="container">
+                <img alt="Cake-Pink" src="{% static 'assets/images/cake-pink.png' %}">
+                <h2 class="pink-color">
+                    Ingresa tus datos
+                </h2>
+            </div>
+        </div>
+        <div class="container mar-top-20">
+            <div class="col-sm-offset-3 col-sm-6">
+                <form id="client_form">
+                    <div class="form-group">
+                        <input class="form-control form-default-cakes" placeholder="Cedula" type="number"
+                               id="cc" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control form-default-cakes" placeholder="Nombre" type="text"
+                               id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control form-default-cakes" placeholder="Telefono" type="number"
+                               id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control form-default-cakes" placeholder="Correo" type="email"
+                               id="mail" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control form-default-cakes" placeholder="Direccion" type="text"
+                               id="address" required>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-lg btn-pink-cake btn-send mar-top-20" id="auth">
+                            Enviar datos
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="shop" class="hidden">
+        {% for item in items %}
+            <div class="chart-cake">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img alt="Cake-one" src="{{ item.url_imagen }}">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="tittle-chart-cake">
+                                <h2 class="pink-color">
+                                    {{ item.nombre }}
+                                </h2>
+                            </div>
+                            <div class="tittle-chart-cake mar-top-10">
+                                <h1 class="pink-color">
+                                    ${{ item.precio|intcomma }}
+                                </h1>
+                            </div>
+                            <p class="mar-top-10 mar-btm-20">
+                                {{ item.descripcion }}
+                            </p>
+                            <button class="btn btn-pink-cake mar-right-10 add btn-block buy"
+                                    data-id-product="{{ item.id }}"
+                                    data-name-product="{{ item.nombre }}"
+                                    data-price-product="{{ item.precio|intcomma }}">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+{% endblock %}

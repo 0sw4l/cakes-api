@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+    <title>We create media creative agency, branding agency, website templates, with design bootstrap, responsive design, mobile agency design.</title>
+    
+  	<!-- meta -->
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="user-scalable=no">
+  	<meta name="author" content="Codeopus">
+    <meta name="description" content="We create media creative agency, branding agency, website templates, with design bootstrap, responsive design, mobile agency design.">
+  
+  	<link href="//codeopus.net/favicon.png?v=1" rel="shortcut icon" type="image/x-icon" />
+  	
+  	<link rel="stylesheet" href="assets/css/minified.css.php" media="all" />
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/application.js"></script>
+</head>
+    
+<body>
+	<!-- push div to control slideout -->
+	<div id="push">
+		
+		<!-- main wrapper -->
+		<div id="wrapper">
+			
+			<!-- theme switcher bar -->
+	        <div id="switcher">
+		        
+		        <!-- logo -->
+		        <a class="logo" href="//codeopus.net/" title="Codeopus">
+			        <img src="assets/img/logo.png" alt="Codeopus" />
+			    </a>
+			    <!-- /logo -->
+		        
+		        <!-- theme selector toggle -->
+	            <a class="themes-open" href="#">
+		            <i class="icon-navicon"></i> Choose Theme		        </a>
+		        <!-- /theme selector toggle -->
+	            
+	            <!-- responsive theme preview icons -->
+	            <div id="responsive">
+	                <ul>
+	                    <li><a href="#" class="d" title="Desktop View"><img src="assets/img/icon-desktop.png" alt="Desktop" /></a></li>
+	                    <li><a href="#" class="t" title="Tablet View"><img src="assets/img/icon-tablet.png" alt="Tablet" /></a></li>
+	                    <li style="margin-right:0px"><a href="#" class="m" title="Mobile View"><img src="assets/img/icon-mobile.png" alt="Mobile" /></a></li>
+                            <li style="background: rgba( 255, 255, 255, 0.1 ); padding-left:15px"><a href="http://demo.codeopus.net" class="" title="HTML Product">HTML Tempalate</a></li>
+                            <li><a href="http://demowp.codeopus.net" class="" title="WordPress Product">WordPress Themes</a></li>
+	                </ul>
+	            </div>
+	            <!-- /responsive theme preview icons -->
+	            
+	            <!-- purchase / close frame buttons -->
+	            <ul class="right">
+	                <li class="purchase" rel="https://themeforest.net/item/safaria-responsive-safari-template/17786183?ref=Codeopus">
+	                    <a href="https://themeforest.net/item/safaria-responsive-safari-template/17786183?ref=Codeopus" target="_blank" title="Purchase Theme">
+	                        <i class="icon-shopping-cart"></i> Purchase
+	                    </a>
+	                </li>		
+	                <li class="remove_frame" rel="http://demo.codeopus.net/safaria/">
+	                    <a href="http://demo.codeopus.net/safaria/" title="Remove Frame"><i class="icon-remove"></i></a>
+	                </li>
+	            </ul>	
+	            <!-- /purchase / close frame buttons -->
+	            
+	        </div>
+	        <!-- /theme switcher -->
+	        
+		</div>
+		<!-- /main wrapper -->
+
+		<!-- iframe wrapper that loads theme preview -->
+	    <div id="frame_wrapper">
+	        <iframe id="iframe" src="http://demo.codeopus.net/safaria/" frameborder="0" width="100%"></iframe>
+	    </div>
+	    <!-- /iframe wrapper that loads theme preview -->
+
+	</div>
+	<!-- /push div to control slideout -->
+	
+	<!-- slideout theme switcher -->
+	<aside id="aside">
+		<h4>Choose Theme &nbsp;<i class="icon-chevron-down"></i></h4>
+		<ul id="theme_list" class="nolist">
+                    	    <li data-thumbnail-src="assets/thumbs/safaria_thumb.jpg">
+                    <a href="?theme=Safaria" rel="http://demo.codeopus.net/safaria/,https://themeforest.net/item/safaria-responsive-safari-template/17786183?ref=Codeopus">
+                        Safaria <span class="type html">html</span>
+                    </a>
+                </li>
+                    	    <li data-thumbnail-src="assets/thumbs/wedding_thumb.jpg">
+                    <a href="?theme=Wedding Time" rel="http://demo.codeopus.net/weddingtime/,https://themeforest.net/item/wedding-time-responsive-wedding-time-themes/15143242?ref=Codeopus">
+                        Wedding Time <span class="type html">html</span>
+                    </a>
+                </li>
+                    	    <li data-thumbnail-src="assets/thumbs/lool_thumb.jpg">
+                    <a href="?theme=LOOL" rel="http://demo.codeopus.net/lool/,https://themeforest.net/item/lool-responsive-creative-portfolio-photography/12603477?ref=Codeopus">
+                        LOOL <span class="type html">html</span>
+                    </a>
+                </li>
+                    	    <li data-thumbnail-src="assets/thumbs/bow_thumb.jpg">
+                    <a href="?theme=bow" rel="http://demo.codeopus.net/bow/,https://themeforest.net/item/bow-parallax-responsive-fashion-template/12210216?ref=Codeopus">
+                        bow <span class="type html">html</span>
+                    </a>
+                </li>
+                    	    <li data-thumbnail-src="assets/thumbs/cake_thumb.jpg">
+                    <a href="?theme=cake dream" rel="http://demo.codeopus.net/cakesdream/,https://themeforest.net/item/cake-dream-responsive-cake-shop-template/11290285?ref=Codeopus">
+                        cake dream <span class="type html">html</span>
+                    </a>
+                </li>
+                    </ul>
+        
+        <!-- demo notes -->
+        <p class="notes textcenter">If you experience any issue(s) with these demos, please try closing the demo bar using the 'x' at the top right of your screen.</p>
+        <!-- /demo notes -->
+	</aside>
+	<!-- slideout theme switcher -->
+	
+	<!-- preview thumbnails -->
+	<img id="preview" src="" alt="Preview" />
+	<!-- /preview thumbnails -->
+	
+</body>
+</html>

@@ -1,0 +1,114 @@
+{% load staticfiles humanize %}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Cake&#39;s Dream is Beautiful Template " name="description">
+    <meta content="" name="author">
+    <link href="{% static 'logo.png' %}" rel="shortcut icon">
+    <title>Amy's cake</title>
+    <link href="{% static 'assets/stylesheets/css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/stylesheets/css/font-family.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/stylesheets/css/responsive.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/stylesheets/css/slick.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/stylesheets/css/slick-theme.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/stylesheets/css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/stylesheets/css/animate.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/javascripts/fancybox/jquery.fancybox.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'assets/stylesheets/css/global.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/stylesheets/css/effect2.css' %}" rel="stylesheet" type="text/css">
+    <script src="{% static 'assets/javascripts/modernizr.custom.js' %}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
+</head>
+<body class="demo-1" id="app">
+<div class="ip-container" id="ip-container">
+    <!--initial header-->
+    <header class="ip-header">
+        <div class="ip-loader">
+            <svg class="ip-inner" height="60px" viewbox="0 0 80 80" width="60px">
+                <path class="ip-loader-circlebg"
+                      d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"></path>
+                <path class="ip-loader-circle"
+                      d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"
+                      id="ip-loader-circle">
+                </path>
+            </svg>
+        </div>
+    </header>
+    <!--main content-->
+    <div class="ip-main">
+        <div class="top-highlight hide">
+            &nbsp;
+        </div>
+        <!-- Start Header Cake -->
+        <section class="header-wrapper">
+            <header class="wrap-header purple-top-dot" deluminate_imagetype="png">
+                <div class="top-absolute">
+                    <div class="top-header">
+                        <div class="container">
+                            <div class="navbar-header visible-xs">
+                                <button class="navbar-toggle toggle-cake show-menu"><span class="sr-only">Toggle Navigation</span><span
+                                        class="icon-bar"></span><span class="icon-bar"></span><span
+                                        class="icon-bar"></span></button>
+                                <a class="navbar-brand navbar-cake" href="#">
+                                    <img alt="Logo-White" src="{% static 'logo.png' %}" width="100"></a>
+                            </div>
+                            <nav>
+                                <ul class="header-nav hidden-xs">
+                                    <li class="pedido hidden">
+                                        <a href="{% url 'app:index' %}">Inicio</a>
+                                    </li>
+                                    <li class="pad-top-0i">
+                                        <img alt="Logo-White" src="{% static 'logo.png' %}" width="100">
+                                    </li>
+                                    <li class="pedido hidden">
+                                        <a href="{% url 'app:pedido' %}">Pedido</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                    </div>
+                    <div class="triangle" deluminate_imagetype="png">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="tittle-sub-top pad-top-150">
+                    <div class="container">
+                        {% block header %}
+                        {% endblock %}
+                    </div>
+                </div>
+            </header>
+
+            {% block main %}
+            {% endblock %}
+
+        </section>
+        <!-- End Header Cake --><!-- Start About Cake -->
+
+        <!-- End Option Cake -->
+    </div>
+</div>
+
+<script src="{% static 'assets/javascripts/jquery.js' %}"></script>
+<script src="{% static 'assets/javascripts/fancybox/jquery.fancybox.pack.js' %}"></script>
+<script src="{% static 'assets/javascripts/slick.js' %}"></script>
+<script src="{% static 'assets/javascripts/wow/wow.js' %}"></script>
+<script src="{% static 'assets/javascripts/custom.js' %}"></script>
+<script src="{% static 'assets/javascripts/bootstrap.js' %}"></script>
+<script src="{% static 'assets/javascripts/classie.js' %}"></script>
+<script src="{% static 'assets/javascripts/pathLoader.js' %}"></script>
+<script src="{% static 'assets/javascripts/main.js' %}"></script>
+<script src="{% static 'js/underscore.js' %}"></script>
+<script src="{% static 'js/backbone.js' %}"></script>
+<script src="{% static 'js/app/main.js' %}"></script>
+<script src="{% static 'js/app/app.js' %}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.js"></script>
+<script type="text/javascript">
+    new WOW().init();
+</script>
+</body>
+</html>
