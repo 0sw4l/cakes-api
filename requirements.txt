@@ -16,7 +16,7 @@ djangorestframework==3.7.3
 gunicorn==19.7.1
 idna==2.6
 olefile==0.44
-Pillow==4.3.0
+Pillow==6.2.0
 http://initd.org/psycopg/upload/psycopg2-2.7.3.1.dev0/psycopg2-2.7.3.1.dev0-cp36-cp36m-manylinux1_x86_64.whl
 pystache==0.5.4
 pytz==2017.3
